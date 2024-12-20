@@ -1,3 +1,5 @@
+/*Fonts "Betű típusok"*/
+
 @font-face{
     font-family: 'text';
     src: url(../fonts/OpenSans-Light.ttf);
@@ -13,6 +15,8 @@
     font-family: 'title';
     src: url(../fonts/Bitter-ExtraBold.ttf);
 }
+
+/*Default settings "Alap beállítások"*/
 
 * {
     margin: 0;
@@ -36,8 +40,74 @@ body {
    font-family: 'text',sans-serif;
    font-size: 16px;
    line-height: 1.5;
+   background: #eee;
 
 }
+
+
+
+/*Layout "Elrendezés"*/
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #999;
+    color: #fff;
+    padding: 10px;
+}
+
+main {
+    margin: auto;
+    margin-top: 75px;
+    padding: 24px;
+    min-height: 900px;
+    max-width: 750px;
+}
+
+main > section {
+    background: #fff;
+    padding: 24px;
+    margin-bottom: 24px;
+
+}
+
+aside {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #ddd;
+    height: 120px;
+}
+
+aside ul {
+    margin: auto;
+    max-width: 750px;
+    list-style: none;
+    display: flex;
+    
+}
+
+aside li {
+    width: 25%;
+    text-align: center;
+}
+
+aside ul a {
+    color: #666;
+    font-size: 175%;
+    display: block;
+    padding: 24px 0;
+    height: 120px;
+}
+
+aside ul a:hover {
+    background: #ccc;
+}
+
+/*Text element ""*/
 
 h1, h2, h3, h4 {
     font-family: 'title';
