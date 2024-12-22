@@ -30,6 +30,11 @@ img {
     max-width: 100%;
 }
 
+video {
+    max-width: 100%;
+
+}
+
 html,
 body {
     height: 100%;
